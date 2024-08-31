@@ -5,3 +5,8 @@ A discord bot that helps you build DnD characters using OpenAI
 You will need a .env file that has:
 OPENAI_PROJECT_API_KEY={an OpenAI project key}
 DISCORD_TOKEN={a Discord token}
+
+Run 
+```bash
+python discordbot.py
+```
