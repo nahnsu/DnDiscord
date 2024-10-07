@@ -10,3 +10,6 @@ Run
 ```bash
 python discordbot.py
 ```
+
+Then, trigger it by using the slash command /bot in a server where the bot has been added.
+
