@@ -26,11 +26,11 @@ async def on_ready():
 @bot.tree.command(name="bot", description="Have the bot respond to your message with an OpenAPI response")
 @app_commands.describe(message="The message from OpenAPI.")
 async def bot_command(interaction: discord.Interaction, message: str):
-    response, bot.conversation_summary = flow(message, bot.conversation_summary)
+    response, bot.conversation_summary = flow(message) # , bot.conversation_summary
     await interaction.response.send_message(response)
 
 
 # Example usage
 if __name__ == "__main__":
-    bot.conversation_summary = ""
+    # bot.conversation_summary = ""
     bot.run(os.getenv("DISCORD_TOKEN"))
